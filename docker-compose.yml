@@ -1,0 +1,14 @@
+services:
+  db:
+    build: .
+    image: postgres-pljava16-java17
+    environment:
+      POSTGRES_USER: devuser
+      POSTGRES_PASSWORD: devpass
+      POSTGRES_DB: devdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+volumes:
+  dbdata:
