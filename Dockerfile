@@ -1,5 +1,5 @@
 # 使用 PostgreSQL 16 官方映像
-FROM postgres:16-bookworm
+FROM postgres:16-bullseye
 
 # 安裝 OpenJDK 17 及編譯工具
 RUN apt-get update && \
